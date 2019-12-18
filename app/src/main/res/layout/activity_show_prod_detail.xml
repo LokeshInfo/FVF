@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    tools:context=".ShowProdDetail"
+    android:paddingBottom="43dp"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_special_offer"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/shoplogo" />
+            </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/prod_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:src="@drawable/app_icon" />
+
+                </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/prod_in_stock"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text=" "
+                    android:textColor="#096D0D"
+                    android:textSize="13dp"
+                                        />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/prod_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="Laptop"
+                    android:textColor="#000"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_prod_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="Rs 30,000"
+                    android:textColor="#000"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_prod_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="@string/product_highlight"
+                    android:textColor="#000"
+                    android:textSize="13dp"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tx_d1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="7pt"
+                    />
+                <TextView
+                    android:id="@+id/tx_dd1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/strike"
+                    android:textColor="@color/grey"
+                    android:layout_marginRight="13dp"
+                    android:textSize="7pt"
+                    />
+                <TextView
+                    android:id="@+id/tx_dis1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Discount 1"
+                    android:textColor="@color/black"
+                    android:textSize="7pt"
+                    />
+                <CheckBox
+                    android:id="@+id/chk1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tx_d2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="7pt"
+                    />
+                <TextView
+                    android:id="@+id/tx_dd2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/strike"
+                    android:textColor="@color/grey"
+                    android:textSize="7pt"
+                    android:layout_marginRight="13dp"
+                    />
+                <TextView
+                    android:id="@+id/tx_dis2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Discount 2"
+                    android:textColor="@color/black"
+                    android:textSize="7pt"
+                    />
+                <CheckBox
+                    android:id="@+id/chk2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+            <!--<android.support.v7.widget.CardView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical">-->
+
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="35dp"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:weightSum="1">-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_margin="5dp"-->
+                            <!--android:layout_weight="0.5"-->
+                            <!--android:text="Warranty"-->
+                            <!--android:textColor="#000"-->
+                            <!--android:textSize="13dp"-->
+                            <!--android:textStyle="bold"-->
+
+                            <!--/>-->
+
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_weight="0.5"-->
+                            <!--android:orientation="horizontal">-->
+
+
+                            <!--<ImageView-->
+                                <!--android:id="@+id/pro_warranty"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="30dp"-->
+                                <!--android:src="@drawable/down_arrow"-->
+                                <!--/>-->
+
+                        <!--</LinearLayout>-->
+                    <!--</LinearLayout>-->
+
+
+                    <!--<TextView-->
+                        <!--android:visibility="gone"-->
+                        <!--android:id="@+id/tv_waranty"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_margin="5dp"-->
+                        <!--android:layout_weight="0.5"-->
+                        <!--android:text="Warranty 1 year manufacture and 6 month products"-->
+                        <!--android:textColor="#000"-->
+                        <!--android:textSize="13dp"-->
+
+                        <!--/>-->
+                <!--</LinearLayout>-->
+
+            <!--</android.support.v7.widget.CardView>-->
+
+
+            <!--<android.support.v7.widget.CardView-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical">-->
+
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="35dp"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:weightSum="1">-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_margin="5dp"-->
+                            <!--android:layout_weight="0.5"-->
+                            <!--android:text="Free Offer"-->
+                            <!--android:textColor="#000"-->
+                            <!--android:textSize="13dp"-->
+                            <!--android:textStyle="bold"-->
+
+                            <!--/>-->
+
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_weight="0.5"-->
+                            <!--android:orientation="horizontal">-->
+
+
+                            <!--<ImageView-->
+                                <!--android:id="@+id/pro_offer"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="30dp"-->
+                                <!--android:src="@drawable/down_arrow"-->
+                                <!--/>-->
+
+                        <!--</LinearLayout>-->
+                    <!--</LinearLayout>-->
+
+
+                    <!--<android.support.v7.widget.CardView-->
+                        <!--android:visibility="gone"-->
+                        <!--android:id="@+id/card_offer"-->
+                        <!--android:layout_marginTop="5dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="0.50">-->
+
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:orientation="horizontal"-->
+                            <!--android:weightSum="1">-->
+
+                            <!--<ImageView-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="80dp"-->
+                                <!--android:layout_margin="5dp"-->
+                                <!--android:layout_gravity="center"-->
+                                <!--android:layout_weight="0.5"-->
+                                <!--android:src="@drawable/mobile" />-->
+
+                            <!--<LinearLayout-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_gravity="center"-->
+                                <!--android:layout_weight="0.5"-->
+                                <!--android:orientation="vertical"-->
+                                <!--android:weightSum="1">-->
+
+                                <!--<TextView-->
+                                    <!--android:gravity="center"-->
+                                    <!--android:layout_width="match_parent"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:text="T-shirts"-->
+                                    <!--android:textColor="#000"-->
+                                    <!--android:textSize="14dp" />-->
+
+                                <!--<TextView-->
+                                    <!--android:gravity="center"-->
+                                    <!--android:layout_width="match_parent"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_weight="0.5"-->
+                                    <!--android:text="Rs. 200"-->
+                                    <!--android:textColor="#000"-->
+                                    <!--android:textSize="12dp" />-->
+
+                            <!--</LinearLayout>-->
+
+                        <!--</LinearLayout>-->
+                    <!--</android.support.v7.widget.CardView>-->
+                <!--</LinearLayout>-->
+
+            <!--</android.support.v7.widget.CardView>-->
+
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:weightSum="1">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_margin="5dp"-->
+                    <!--android:layout_weight="0.5"-->
+                    <!--android:text="EMI Option"-->
+                    <!--android:textColor="#000"-->
+                    <!--android:textSize="13dp"-->
+
+                    <!--/>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="0.5"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<Button-->
+                        <!--android:id="@+id/pro_emi"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="25dp"-->
+                        <!--android:layout_margin="5dp"-->
+                        <!--android:background="@drawable/rounded_corner_textview"-->
+                        <!--android:text="EMI Option"-->
+                        <!--android:textAllCaps="false"-->
+                        <!--android:textColor="#fff"-->
+                        <!--android:textSize="13dp" />-->
+                <!--</LinearLayout>-->
+
+            <!--</LinearLayout>-->
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!--<LinearLayout-->
+    <!--android:layout_weight="0.9"-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_gravity="bottom"-->
+    <!--android:gravity="bottom"-->
+    <!--android:background="#fff"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+    <!--<TextView-->
+    <!--android:layout_gravity="center"-->
+    <!--android:gravity="center"-->
+    <!--android:textAlignment="center"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:text="Buy for rs. 30,000"-->
+    <!--android:background="@color/colorPrimary"-->
+    <!--android:textSize="13dp"-->
+    <!--android:layout_margin="5dp"-->
+    <!--android:textColor="#fff"-->
+    <!--android:textAllCaps="false"-->
+    <!--/>-->
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:weightSum="1"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:layout_weight="0.90"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="#09990D"
+        >
+
+        <LinearLayout
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/add_to_cart"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_btn_addcart"
+                android:textSize="20dp"
+                android:textColor="#fff"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/colorPrimary"
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/prod_buy_now"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Buy Now"
+                android:textSize="20dp"
+                android:textColor="#fff"
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

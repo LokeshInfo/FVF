@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/space_10">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/iv_pro_img"
+                android:layout_width="100dp"
+                android:layout_height="88dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="@dimen/space_10"
+                android:src="@drawable/user_profile"
+                app:civ_border_color="@color/gray"
+                app:civ_border_width="1dp"
+                />
+
+                <ImageView
+                    android:id="@+id/icon_camera"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/camera"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignBottom="@+id/iv_pro_img"
+                    android:layout_alignRight="@+id/iv_pro_img"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="1dp"
+                    />
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_pro_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_reg_name_hint"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_pro_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_5"
+                android:background="@drawable/xml_textbox_bg"
+                android:ems="10"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/tv_pro_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/et_login_phone_hint"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_pro_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_5"
+                android:background="@drawable/xml_textbox_bg"
+                android:ems="10"
+                android:inputType="number"
+                android:maxLength="15" />
+
+            <TextView
+                android:id="@+id/tv_pro_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_login_email"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_pro_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_5"
+                android:background="@drawable/xml_textbox_bg"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                />
+
+
+            <Button
+                android:id="@+id/btn_pro_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/xml_button"
+                android:text="@string/btn_reg_update"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

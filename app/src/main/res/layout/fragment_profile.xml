@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/loginfrst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="Please Login First"
+        android:textSize="10pt"
+        android:visibility="gone"
+        />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/space_10">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/iv_pro_img"
+                android:layout_width="100dp"
+                android:layout_height="88dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/space_10"
+                android:layout_marginTop="@dimen/space_10"
+                android:src="@drawable/user_profile"
+                app:civ_border_color="@color/gray"
+                app:civ_border_width="1dp" />
+
+            <ImageView
+                android:id="@+id/btn_pro_edit"
+                android:layout_width="28dp"
+                android:layout_height="30dp"
+                android:src="@drawable/eddit"
+                android:layout_gravity="end"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.66dp"
+                android:layout_margin="10dp"
+                android:background="@color/colorPrimary"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="13dp"
+                android:layout_marginTop="10pt"
+                >
+
+            <TextView
+                android:id="@+id/tv_pro_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name -"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_pro_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_5"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:editable="false"
+                android:focusable="false"
+                android:ems="10"
+                android:layout_marginLeft="33pt"
+                android:inputType="text" />
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="13dp"
+            >
+
+
+        <TextView
+                android:id="@+id/tv_pro_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile Number -"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_pro_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_5"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:editable="false"
+                android:focusable="false"
+                android:ems="10"
+                android:layout_marginLeft="8pt"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="13dp"
+            >
+
+        <TextView
+                android:id="@+id/tv_pro_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email -"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_pro_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_5"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:editable="false"
+                android:focusable="false"
+                android:ems="10"
+                android:inputType="text"
+                android:layout_marginLeft="35pt"
+                />
+        </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.66dp"
+                android:layout_margin="10dp"
+                android:background="@color/colorPrimary"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

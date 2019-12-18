@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "851773623076",
+    "firebase_url": "https://tukuri-7a69f.firebaseio.com",
+    "project_id": "tukuri-7a69f",
+    "storage_bucket": "tukuri-7a69f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:851773623076:android:72d539847bccf63d4701b1",
+        "android_client_info": {
+          "package_name": "com.grocery_vendor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "851773623076-h4mtske54nt4hm8jatr3kj4dcfgibskd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.grocery_vendor",
+            "certificate_hash": "a7478d883941da03f58dc1a8c5542e7997686d93"
+          }
+        },
+        {
+          "client_id": "851773623076-iv5jejv3ld4v7ct6e3fc3d8vhn3ag349.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCb1MmbeD_IzAMtPGLgbgX0K0xF-oD5ik"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "851773623076-iv5jejv3ld4v7ct6e3fc3d8vhn3ag349.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:851773623076:android:e7618698571af8374701b1",
+        "android_client_info": {
+          "package_name": "com.ics.fvfs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "851773623076-iv5jejv3ld4v7ct6e3fc3d8vhn3ag349.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCb1MmbeD_IzAMtPGLgbgX0K0xF-oD5ik"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "851773623076-iv5jejv3ld4v7ct6e3fc3d8vhn3ag349.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
